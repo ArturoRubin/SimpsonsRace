@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#logo{
+    height: 300px;
+}
+
+button{
+    font-size: 25px;
+    height: 50px;
+    appearance: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 4px solid black;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-shadow: 1px 1px;
+    cursor: pointer;
+   margin-left: 60px;
+    letter-spacing: .1em;
+    transition: all 200ms ease; 
+    padding: 10px;
+}
+
+button::-moz-focus-inner{
+    outline: none;
+    border: none;
+}
+
+button:hover{
+    box-shadow: 5px 5px 5px black;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../Assets/Imagenes/livingroom.jpeg);
+   background-size: cover;
+}
+
+.menu{
+    
+    padding: 25px;
+   position: absolute;
+   top: 20%;
+   left: 24.5%;
+   border: 1px solid #ffffff40;
+   box-shadow: 0 10px 30px #000;
+   justify-content: center;
+}
+
+.filter{
+   -webkit-backdrop-filter: blur(15px);
+   backdrop-filter: blur(30px);
+    background-color: rgba(243, 243, 243, 0.2);
+}
+
+
+
+
