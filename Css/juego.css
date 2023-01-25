@@ -31,3 +31,7 @@ canvas{
     border: 7px solid black;
     margin-top: 8px;
 }
+
+.none{
+    display: none;
+}
