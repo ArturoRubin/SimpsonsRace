@@ -1,14 +1,18 @@
 
 
 const lienzo = document.getElementById("space")
-console.log(lienzo)
+
+
+const bg = document.getElementById("background")
+
 
 const ctx = lienzo.getContext("2d")
-console.log(ctx)
+const ctxBg = bg.getContext("2d")
+
 
 // Movimiento de fondo
 
-/* const img = new Image();
+ const img = new Image();
 img.src="../Assets/Imagenes/fondoFInalFinal.png"
 
 const backgroundImage = {
@@ -18,15 +22,15 @@ const backgroundImage = {
   
     move: function() {
       this.x += this.speed;
-      this.x %= canvas.width;
+      this.x %= bg.width;
     },
   
     draw: function() {
-      ctx.drawImage(this.img, this.x, 0);
+      ctxBg.drawImage(this.img, this.x, 0);
       if (this.speed < 0) {
-        ctx.drawImage(this.img, this.x + canvas.width, 0);
+        ctxBg.drawImage(this.img, this.x + bg.width, 0);
       } else {
-        ctx.drawImage(this.img, this.x - this.img.width, 0);
+        ctxBg.drawImage(this.img, this.x - this.img.width, 0);
       }
     },
   };
@@ -34,14 +38,14 @@ const backgroundImage = {
   function updateCanvas() {
     backgroundImage.move();
   
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctxBg.clearRect(0, 0, bg.width, bg.height);
     backgroundImage.draw();
   
     requestAnimationFrame(updateCanvas);
   }
   
   // start calling updateCanvas once the image is loaded
-  img.onload = updateCanvas;  */
+  img.onload = updateCanvas;  
     
 
 //Seleccion botones

@@ -36,7 +36,7 @@ canvas{
     display: none !important;
 }
 
-gameOver{
+.gameOver{
     width: 100vw;
     height: 100vh;
     background-color: black;
@@ -44,4 +44,15 @@ gameOver{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.lienzos{
+    position: relative;
+}
+
+#space{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
 }
