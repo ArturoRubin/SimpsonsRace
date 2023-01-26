@@ -18,7 +18,7 @@ img.src="../Assets/Imagenes/fondoFInalFinal.png"
 const backgroundImage = {
     img: img,
     x: 0,
-    speed: -1,
+    speed: -10,
   
     move: function() {
       this.x += this.speed;
@@ -127,13 +127,13 @@ class Nave {
     }
 
     arriba() {
-        if (this.y > 0) {
+        if (this.y > 80) {
             this.y -= this.velocidad
         }
     }
 
     abajo() {
-        if (this.y < 370) {
+        if (this.y < 340) {
             this.y += this.velocidad
         }
     }
@@ -167,7 +167,7 @@ class Alien{
     }
     dibujarse(){
         console.log(this.img)
-        this.x -= 7 //Aqui modificamos la velocidad en que se aparecen los otros coches
+        this.x -= 8 //Aqui modificamos la velocidad en que se aparecen los otros coches
         ctx.drawImage(this.img, this.x, this.y, 100, 60) // Tamaño aliens
     }
 }
@@ -262,7 +262,7 @@ setInterval(() => {
     console.log(alienAleatorio)
     const a = new Alien(800, posicionY, alienAleatorio) //Velocidad de cada cuando salen los coches
     alien.push(a)
-},1000) 
+},600) 
 }
 
 
