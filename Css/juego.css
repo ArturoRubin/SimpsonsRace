@@ -27,7 +27,6 @@ button:hover{
 }
 
 canvas{
-    background-color: aliceblue;
     border: 7px solid black;
     margin-top: 8px;
 }
@@ -44,6 +43,8 @@ canvas{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 0;
 }
 
 .lienzos{
