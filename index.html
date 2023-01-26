@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Simpsons Race Game</title>
-    <link rel="stylesheet" href="../Css/paginaInicio.css">
+    <link rel="stylesheet" href="Css/paginaInicio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
     <script>
 
         let audio = new Audio()
-        audio.src = "../Assets/Sonidos/IntroSimpsons.mp3"
+        audio.src = "./Assets/Sonidos/IntroSimpsons.mp3"
 
         document.getElementById("play-button").addEventListener("click", ()=>{
             audio.play();
@@ -23,7 +23,7 @@
 
     </script>
      <div class="menu filter">
-        <img id="logo" src="/Assets/Imagenes/logo final simpson2.png">
+        <img id="logo" src="./Assets/Imagenes/logo final simpson2.png">
         <br>
         <a href="../Html/juego.html"><button> Start Game!</button></a>
         <a href="../Html/creditos.html"><button> Credits</button></a> 

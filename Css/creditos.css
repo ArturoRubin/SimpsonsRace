@@ -1,4 +1,39 @@
+body {
+    background-color: black;
+    color: #C99F4D;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
 
-body{
-    background-color: aqua;
-}
+  #credits {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 3em;
+    margin-bottom: 50px;
+  }
+
+  .credit {
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+
+  .role {
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  #credits {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+  }
+
+  #credits .inner {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+  }
+  

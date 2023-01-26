@@ -4,11 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>creditos</title>
+    <link rel="stylesheet" href="../Css/creditos.css">
 </head>
 <body>
-    <h1>Aqui se mostrarán los creditos</h1>
+    <h1>Development Team</h1>
+    <div id="credits">
+      <div class="inner">
+        <div class="credit">
+          <span class="role">Producer and Project Director:</span> Arturo Rubín
+        </div>
+        <div class="credit">
+          <span class="role">Lead Programmer:</span> Arturo Rubín
+        </div>
+        <div class="credit">
+            <span class="role">Asistant Programmer:</span> Alfonso Rubín
+          </div>
+        <div class="credit">
+          <span class="role">Designer:</span> Arturo Rubín
+        </div>
+        <div class="credit">
+          <span class="role">Music:</span> Danny Elfman
+        </div>
+        <div class="credit">
+          <span class="role"> Special Mention:</span> Harland Lohora & Sandra López
+        </div>
+      </div>
+    </div>
 
-    
-</body>
+        <audio src="../Assets/Sonidos/copia-de-introsimpsons_CgKvT8Yg.mp3" autoplay loop"></audio>
+
+    <script>
+      // Animacion de scroll
+      let credits = document.getElementById("credits");
+      let inner = document.querySelector("#credits .inner");
+      let height = inner.offsetHeight;
+      let speed = 1.5; // Ajustar la velocidad de los créditos
+  
+      function animate() {
+        inner.style.top = (inner.offsetTop - speed) + "px";
+        if (inner.offsetTop <= -height) {
+          inner.style.top = "100%";
+        }
+        requestAnimationFrame(animate);
+      }
+  
+      animate();
+    </script>
+  </body>
 </html>
