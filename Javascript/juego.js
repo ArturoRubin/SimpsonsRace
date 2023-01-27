@@ -95,7 +95,7 @@ class Nave {
         this.y = y
         this.w = w
         this.h = h
-        this.velocidad = 20
+        this.velocidad = 30
         this.img = alienimg
     }
 
@@ -255,7 +255,7 @@ btn.addEventListener("click", () => {
 //Creacion de los aliens
 function crearAlien(){
 setInterval(() => {
-    const posicionY = Math.floor(Math.random() * 250)
+    const posicionY = Math.floor((Math.random() * 350) + 60)
     const posicionAleatorio = Math.floor(Math.random()*tiposAliens.length)
     
     const alienAleatorio = tiposAliens[posicionAleatorio]
@@ -264,12 +264,6 @@ setInterval(() => {
     alien.push(a)
 },600) 
 }
-
-
-/* //Iniciar musica
-let musica = new Audio()
-        audio.src = "../Assets/Sonidos/musicaJuego.mp3"
-    musica.play() */
 
 // Game Over
 
